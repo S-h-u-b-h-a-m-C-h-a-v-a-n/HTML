@@ -1,0 +1,25 @@
+<html>
+ <body>
+  <script type="text/javascript">
+
+       document.write("Entering The Loop!<br />");
+        Outerloop:  // This is Lable Name
+       for (var i = 0; i<5; i++)
+       {
+         document.write("Outerloop:"+ i + "<br  />");
+         Innerloop:
+         for (var j=0; j<5; j++)
+         {
+           if(j > 3)break ;
+           if(i == 2)break Innerloop;
+           if(i == 4)break  Outerloop;
+           document.write("Innerloop:"+ j +" <br  />");
+
+         }
+       }
+       document.write("Existing The Loop <br    />")
+
+
+   </script>
+ </body>
+</html>
